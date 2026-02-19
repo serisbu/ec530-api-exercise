@@ -8,7 +8,7 @@ def load_ex1_json() -> dict:
     """
     Read Exercise 1 output JSON from data/ex1_shortages.json
     """
-    data_path = Path(__file__).resolve().parent.parent / "data" / "ex1_shortages.json"
+    data_path = Path(__file__).resolve().parent / "data.json"
     if not data_path.exists():
         raise FileNotFoundError(
             f"Missing {data_path}. Ask your teammate to export Exercise 1 JSON to this file."
